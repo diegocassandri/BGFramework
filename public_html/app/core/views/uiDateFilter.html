@@ -1,0 +1,29 @@
+<div class="filter month-filter">
+	<div class="row">
+		<div class="caption col-md-12">{{filter.displayLabel}}</div>
+	</div>
+	<form>		
+		<div class="row">
+			<div class="col-md-12 filter-dates">
+				<div class="start-date input-group {{startValueError}}" id="search-div">
+					<input class="form-control date-input" placeholder="Data Inicial" ng-model="startValue" mask="39/19/9999" restrict="reject">
+					<div class="date-button input-group-btn" moment-picker="startValueStr" format="DD/MM/YYYY" start-view="day" locale="pt-br" change="onStartChange(newValue, oldValue)">
+						<span role="button" class="btn btn-default" ><i class="fa fa-calendar"></i></span>							
+					</div>
+				</div>
+
+				<div class="end-date input-group {{endValueError}}" id="search-div">
+					<input class="form-control date-input" placeholder="Data Final" ng-model="endValue" mask="39/19/9999" restrict="reject">
+					<div class="date-button input-group-btn" moment-picker="endValueStr" format="DD/MM/YYYY" start-view="day" locale="pt-br" change="onEndChange(newValue, oldValue)">
+						<a role="button" class="btn btn-default"><i class="fa fa-calendar"></i></a>							
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row" ng-show="startValueError || endValueError">
+			<div class="col-md-6 filter-alert alert alert-danger">
+				Período inválido.
+			</div>
+		</div>
+	</form>
+</div>

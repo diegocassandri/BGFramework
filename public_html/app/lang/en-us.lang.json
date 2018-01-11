@@ -1,0 +1,60 @@
+{
+	"name": "English (United States)",
+	"code": "en-us",
+	"values": {
+		"masks": {
+			"date": 	"19/39/9999",
+			"time": 	"19:59:59 AA",
+			"datetime":	"19/39/9999 19:59:59 AA",
+			"phone":	"(999)9?9?999-9999"			
+		},
+		"formats": {
+			"date":				"MM/dd/yyyy",
+			"time":				"HH:mm:ss",
+			"datetime":			"MM/dd/yyyy HH:mm:ss",
+			"dateSperator":		"/",
+			"timeSeparator":	":",
+			"decimalSeparator":	".",
+			"thousandSeparator": ","
+		},
+		"btnNotifications": 	"Notifications",
+		"btnLang":				"Language",
+		"menuMyAccount":		"My Account",
+		"menuInvoices":			"Invoices",
+		"menuSignOut":			"Sign Out",
+		"msgSelectLanguage":	"Please select your language",
+
+		"btnSave":				"Save",
+		"btnYes":				"Yes",
+		"btnNo":				"No",
+		"btnCancel":			"Cancel",
+		"btnOk":				"OK",
+		"btnNew":		 		"New",
+		"btnDelete": 			"Delete",
+		"edtSearch": 			"Search...",
+		"btnGoto":				"Go To",
+		"editTitle":			"Edit",
+		"insertTitle":			"New",
+		"msgDeleteTitle": 		"Delete",
+		"msgDeleteNoSelect":	"No records selected.",
+		"msgDeleteText":		"Confirm deletion of selected records?",
+		"msgLoadingGrid":		"Loading data...",
+		"msgNoRecordFound":		"No records found.",
+		"msgLoadingErrorGrid":	"Error on loading data!",
+		"msgGotoPageTitle":		"Go To",
+		"msgGotoPageText":		"Page",
+		"msgSaveError":			"Could not save the record.",
+
+
+	
+		"mod_dashboard":{
+			"name": 				"Dashboard"
+		},
+		"mod_costumers": {
+			"name":					"Costumers"
+		},
+		"mod_products": {
+			"name": 				"Products"
+		}
+ 	}
+}

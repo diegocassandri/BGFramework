@@ -1,0 +1,12 @@
+.data-grid {
+	min-width: 600px;
+}
+
+
+.col_BIRTHDAY {
+	min-width: 100px;
+}
+
+.col_PHONENUMBER {
+	min-width: 120px;
+}

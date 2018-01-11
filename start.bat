@@ -1,0 +1,7 @@
+@ECHO OFF
+
+:START
+
+node index
+
+GOTO START

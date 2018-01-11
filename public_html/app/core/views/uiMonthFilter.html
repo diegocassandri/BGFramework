@@ -1,0 +1,64 @@
+<div class="filter month-filter">
+	<div class="row">
+		<div class="caption col-md-12">{{filter.displayLabel}}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="year">
+				<div class="btn-year minus">
+					<a ng-click="decYear()" href="">
+						<i class="fa fa-chevron-left"></i>
+					</a>
+				</div>
+				<div class="year-number">
+					<a ng-click="yearClick()" href="">{{Year}}</a>
+				</div>
+				<div class="btn-year plus">
+					<a ng-click="incYear()" href="">
+						<i class="fa fa-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="months col-md-12">
+			<div class="{{months[1]}}"><a ng-click="monthClick(1)" href="">Janeiro</a></div>
+			<div class="{{months[2]}} mid"><a ng-click="monthClick(2)" href="">Fevereiro</a></div>
+			<div class="{{months[3]}}"><a ng-click="monthClick(3)" href="">Março</a></div>
+			<div class="{{months[4]}}"><a ng-click="monthClick(4)" href="">Abril</a></div>
+			<div class="{{months[5]}} mid"><a ng-click="monthClick(5)" href="">Maio</a></div>
+			<div class="{{months[6]}}"><a ng-click="monthClick(6)" href="">Junho</a></div>
+			<div class="{{months[7]}}"><a ng-click="monthClick(7)" href="">Julho</a></div>
+			<div class="{{months[8]}} mid"><a ng-click="monthClick(8)" href="">Agosto</a></div>
+			<div class="{{months[9]}}"><a ng-click="monthClick(9)" href="">Setembro</a></div>
+			<div class="{{months[10]}}"><a ng-click="monthClick(10)" href="">Outubro</a></div>
+			<div class="{{months[11]}} mid"><a ng-click="monthClick(11)" href="">Novembro</a></div>
+			<div class="{{months[12]}}"><a ng-click="monthClick(12)" href="">Dezembro</a></div>
+		</div>
+	</div>
+	<form>		
+		<div class="row">
+				<div class="col-md-12 filter-dates">
+					<div class="start-date input-group {{startValueError}}" id="search-div">
+						<input class="form-control date-input" placeholder="Data Inicial" ng-model="startValue" mask="39/19/9999" restrict="reject">
+						<div class="date-button input-group-btn" moment-picker="startValueStr" format="DD/MM/YYYY" start-view="day" locale="pt-br" change="onStartChange(newValue, oldValue)">
+							<span role="button" class="btn btn-default" ><i class="fa fa-calendar"></i></span>							
+						</div>
+					</div>
+
+					<div class="end-date input-group {{endValueError}}" id="search-div">
+						<input class="form-control date-input" placeholder="Data Final" ng-model="endValue" mask="39/19/9999" restrict="reject">
+						<div class="date-button input-group-btn" moment-picker="endValueStr" format="DD/MM/YYYY" start-view="day" locale="pt-br" change="onEndChange(newValue, oldValue)">
+							<a role="button" class="btn btn-default"><i class="fa fa-calendar"></i></a>							
+						</div>
+					</div>
+				</div>		
+		</div>
+		<div class="row" ng-show="startValueError || endValueError">
+			<div class="col-md-6 filter-alert alert alert-danger">
+				Período inválido.
+			</div>
+		</div>
+	</form>
+</div>
